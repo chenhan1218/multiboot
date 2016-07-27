@@ -9,7 +9,7 @@
 WARNING: This will remove all data on the usb disk
   ``` bash
 git clone https://github.com/chenhan1218/multiboot
-rsync -avP --delete multiboot /media/user/MULTIBOOT/
+rsync -avP --delete multiboot/usb/ /media/user/MULTIBOOT/
   ```
 
 4. Change value of fs_uuid in EFI/BOOT/grub.cfg and boot/grub/x86_64-efi/load.cfg from AAAA-AAAA to "uuid" of usb disk. (You can check uuid of usbdisk with `sudo blkid`)
