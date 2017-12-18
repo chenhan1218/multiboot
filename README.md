@@ -23,6 +23,6 @@ Reference:
 # https://wiki.archlinux.org/index.php/Multiboot_USB_drive
 In case you want to boot ISOs in UEFI mode, you have to install grub for the UEFI target:
 
-# grub-install --target x86_64-efi --efi-directory /mnt --boot-directory=/mnt/boot --removable
+# grub-install --target x86_64-efi --efi-directory /mnt --boot-directory=/mnt/boot --uefi-secure-boot --removable
 ```
 
